@@ -59,7 +59,13 @@
                         var e = new Image;
                         e.src = this.images[b];
                         e.className = "Flickfeed-image";
-                        c.appendChild(e)
+                        
+                        var a = document.createElement("a");
+                        var linkText = document.createTextNode(e);
+                        a.appendChild(linkText);
+                        a.href = this.images[b];
+                        
+                        c.appendChild(a)
                     }
                     this.element.appendChild(c)
                 }
