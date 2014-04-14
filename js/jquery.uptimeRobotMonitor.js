@@ -242,7 +242,7 @@
 		var xMid = $setting.width/2;					
 		var yPaddingTop = $setting.height - 0.3*padding;
 		var fWriteUptimeRobot = function(){
-			writeUptimeRobot($setting, xMid, yPaddingTop, containerId);
+			//writeUptimeRobot($setting, xMid, yPaddingTop, containerId);
 		};
 		
 		//Try loading image
