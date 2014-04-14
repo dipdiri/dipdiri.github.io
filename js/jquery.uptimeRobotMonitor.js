@@ -348,7 +348,7 @@
 			drawTextAlongArc(c, text, xMid, yMid, radius, 0.7*Math.PI);
 		}else if(monitorConf.isStatus){
 			var statusText = perc == 0.01 ? "offline" : "online";
-			c.fillText(statusText, xMid+20, yMid-5);
+			c.fillText(statusText, xMid+25, yMid+2);
 		}
 	}
 	
