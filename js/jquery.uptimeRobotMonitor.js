@@ -348,7 +348,7 @@
 			drawTextAlongArc(c, text, xMid, yMid, radius, 0.7*Math.PI);
 		}else if(monitorConf.isStatus){
 			var statusText = perc == 0.01 ? "down" : "up";
-			c.fillText(statusText, xMid, yMid);
+			c.fillText(statusText, xMid+10, yMid);
 		}
 	}
 	
