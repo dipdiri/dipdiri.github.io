@@ -177,7 +177,7 @@
 		}
 						
 		//Draw the circle for current status
-		draw($setting, index, canvasPartSize, rRatio + 0.7, monitor.status == "2" ? 100 : 0.01, containerId, {//Must be 0.01 else circle is not drawn when server is down
+		draw($setting, index, canvasPartSize-20, rRatio + 0.7, monitor.status == "2" ? 100 : 0.01, containerId, {//Must be 0.01 else circle is not drawn when server is down
 			color: "#5CE62E",
 			unavailableColor: "#E60000",
 			backgroundColor: monitorConf.backgroundColor,
@@ -345,7 +345,7 @@
 		if(monitorConf.labelPrefix){
 			var text = monitorConf.labelPrefix + ": " + perc + "%";
 			//c.fillText(text, xMid - text.length*3.0, radiusRatio/1.3 * padding);
-			drawTextAlongArc(c, text, xMid-25, yMid, radius, 0.7*Math.PI);
+			drawTextAlongArc(c, text, xMid, yMid, radius, 0.7*Math.PI);
 		}else if(monitorConf.isStatus){
 			var statusText = perc == 0.01 ? "offline" : "online";
 			c.fillText(statusText, xMid+25, yMid+2);
