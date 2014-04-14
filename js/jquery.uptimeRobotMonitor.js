@@ -357,14 +357,14 @@
         context.translate(centerX, centerY);
         context.rotate(-1 * angle / 2);
         context.rotate(-1 * (angle / len) / 2);
-        for(var n = 0; n < len; n++) {
-          context.rotate((Math.PI/1.5) / (len));
-          context.save();
-          context.translate(0, -0.85 * radius);
-          s = str[n];
+        //for(var n = 0; n < len; n++) {
+          //context.rotate((Math.PI/1.5) / (len));
+          //context.save();
+          //context.translate(0, -0.85 * radius);
+          //s = str[n];
           //context.fillText(s, 0, 0);
-          context.restore();
-        }
+          //context.restore();
+        //}
         context.restore();
     }
 	
