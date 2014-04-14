@@ -304,7 +304,7 @@
 		//Canvas start,end,mid point for monitor based on index in array
 		var xStart = index * canvasPartSize;
 		var xEnd = xStart + canvasPartSize;
-		var xMid = xStart + 20;
+		var xMid = xStart + 10;
 		//var xMid = (xStart + xEnd)/2;
 		//Canvas y Mid (shifted to top from exact mid by padding), minus padding of 10%
 		var padding = getPadding($setting);
@@ -349,7 +349,7 @@
 			drawTextAlongArc(c, text, xMid, yMid, radius, 0.7*Math.PI);
 		}else if(monitorConf.isStatus){
 			var statusText = perc == 0.01 ? "offline" : "online";
-			c.fillText(statusText, xMid+30, yMid+2);
+			c.fillText(statusText, xMid+20, yMid+2);
 		}
 	}
 	
