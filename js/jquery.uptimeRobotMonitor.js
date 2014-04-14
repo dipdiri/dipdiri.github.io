@@ -308,8 +308,8 @@
 		//var xMid = (xStart + xEnd)/2;
 		//Canvas y Mid (shifted to top from exact mid by padding), minus padding of 10%
 		var padding = getPadding($setting);
-		//var yMid = ($setting.height/2)+10;
-		var yMid = ($setting.height/2)-padding;
+		var yMid = ($setting.height/2)+10;
+		//var yMid = ($setting.height/2)-padding;
 		//Status radius, h/2 - extra radiusRatio% of padding
 		var radius = ($setting.height/2)-(radiusRatio*padding);
 		//Draw overall uptime
