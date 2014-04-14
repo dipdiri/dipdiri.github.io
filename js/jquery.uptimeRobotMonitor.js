@@ -177,7 +177,7 @@
 		}
 						
 		//Draw the circle for current status
-		draw($setting, index, canvasPartSize-20, rRatio + 0.7, monitor.status == "2" ? 100 : 0.01, containerId, {//Must be 0.01 else circle is not drawn when server is down
+		draw($setting, index, canvasPartSize, rRatio + 0.7, monitor.status == "2" ? 100 : 0.01, containerId, {//Must be 0.01 else circle is not drawn when server is down
 			color: "#5CE62E",
 			unavailableColor: "#E60000",
 			backgroundColor: monitorConf.backgroundColor,
@@ -339,8 +339,8 @@
 		
 		//Fill percentage with label
 		c.fillStyle=monitorConf.percLabelColor;
-		c.font = "bold " + $setting.font;	
-		c.textAlign = 'center';
+		c.font = " " + $setting.font;	
+		c.textAlign = 'right';
 		c.lineWidth = 4;
 		if(monitorConf.labelPrefix){
 			var text = monitorConf.labelPrefix + ": " + perc + "%";
