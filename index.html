@@ -1,128 +1,24 @@
 <html>
     <head>
-        <title>dipdiri memeler</title>
+        <title>dipdiri</title>
+        <meta name="robots" content="noindex, nofollow">
         <link rel="shortcut icon" href="http://dl.dropboxusercontent.com/s/xxs6sad6inv00ah/logo_1.png" type="image/x-icon">
-        <link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+        
     </head>
     <body>
-        <p>（。 ㅅ 。）<small>gonder@dipdiri.com</small> </p>
-        
-        <dl>
-            <dd><small><code>- gözler</code> olmasın</small></dd>
-            <dd><small><code>- bacaklar</code> olmasın</code></small></dd>
-            <dd><small><code>- dipdiri</code> <code>memeler</code> olsun</small></dd>
-        </dl>
-        
-        <div class="square-grid"></div>
-        
-        <script type="text/javascript">
-            (function (f, g) {
-                function b(a) {
-                    if (this === f && "querySelector" in document && "localStorage" in window && "addEventListener" in window) return new b(a);
-                    this.options = a || {};
-                    this.settings = {};
-                    for (var c in this.defaults) this.settings[c] = this.options[c] || this.defaults[c];
-                    this.settings.userId = this.options.userId || null;
-                    this.settings.groupId = this.options.group_id || null;
-                    if (!this.settings.userId && !this.settings.groupId) throw Error("One valid ID needs to be passed in");
-                    this.settings.setId && (this.ApiConfig.method = "flickr.photosets.getPhotos");
-                    this.images = [];
-                    this.imageData = [];
-                    this.success = this.options.success || null;
-                    this.complete = this.options.complete || null;
-                    this.template = this.options.template || null;
-                    this.setElement();
-                    if (!this.element) throw Error("Can't find a valid element");
-                    this.run()
-                }
-                b.prototype.run = function () {
-                    var a = new XMLHttpRequest;
-                    a.open("GET", this.buildURL(), !0);
-                    a.onreadystatechange = function () {
-                        if (4 == a.readyState)
-                            if (a.responseText) this.parse(JSON.parse(a.responseText));
-                            else throw Error("An unknown error occurred");
-                    }.bind(this);
-                    a.send()
-                };
-                b.prototype.setElement = function () {
-                    this.element = g.querySelector(this.options.target || "#Flickfeed")
-                };
-                b.prototype.parse = function (a) {
-                    if (a.photos) this.imageData = a.photos.photo, this.processImages();
-                    else {
-                        if (a.code) throw Error(a.message);
-                        throw Error("An unknown error occurred");
-                    }
-                };
-                b.prototype.processImages = function () {
-                    for (var a = 0; a < this.imageData.length; a++) this.images.push(this.buildImageUrl(this.imageData[a]));
-                    this.success && "function" === typeof this.success ? this.success(this.images) : this.output()
-                };
-                b.prototype.output =
-                    function () {
-                        var a = function () {
-                            this.complete && "function" === typeof this.complete && this.complete()
-                        }.bind(this);
-                        if (this.template && "string" === typeof this.template) this.element.innerHTML = this.compileTemplate();
-                        else {
-                            for (var c = g.createDocumentFragment(), b = 0; b < this.images.length; b++) {
-                                var e = new Image;
-                                e.src = this.images[b];
-                                e.className = "Flickfeed-image";
-                                
-                                var a = document.createElement("a");
-                                a.setAttribute('data-lightbox', 'DipDiri');
-                                a.setAttribute('data-title', 'DipDiri.Com');
-                                a.appendChild(e);
-                                a.href = this.images[b].replace("_q","_c");;
-                                
-                                c.appendChild(a)
-                            }
-                            this.element.appendChild(c)
-                        }
-                };
-                b.prototype.compileTemplate = function () {
-                    for (var a = "", b = 0; b < this.images.length; b++) var d = this.template.replace(/{{image}}/g,
-                        this.images[b]),
-                    d = d.replace(/{{link}}/g, "http://www.flickr.com/photos/" + this.imageData[b].owner + "/" + this.imageData[b].id + "/"), d = d.replace(/{{title}}/g, this.imageData[b].title), a = a + d;
-                    return a
-                };
-                b.prototype.ApiConfig = {
-                    root: "https://api.flickr.com/services/rest/",
-                    method: "flickr.photos.search",
-                    ApiKey: "d6a7a478b5c00470404cd2d6fbb015c6",
-                    format: "json",
-                    extras: ["nojsoncallback=1", "safe_search=2", "per_page=300", "page=1", "auth_token=72157643722853054-29b6c442f001e9cd", "api_sig=88298e7816f32d689a6c4ca6b8d12e85"]
-                };
-                b.prototype.defaults = {
-                    limit: 10,
-                    size: "m",
-                    sort: "date-posted-desc"
-                };
-                b.prototype.buildURL = function () {
-                    return this.ApiConfig.root + "?method=" +
-                        this.ApiConfig.method + "&api_key=" + this.ApiConfig.ApiKey + "&user_id=" + this.settings.userId + "&format=" + this.ApiConfig.format + "&" + this.ApiConfig.extras.join("&")
-                };
-                b.prototype.buildImageUrl = function (a) {
-                    return "http://farm" + a.farm + ".staticflickr.com/" + a.server + "/" + a.id + "_" + a.secret + "_" + this.settings.size + ".jpg"
-                };
-                f.Flickfeed = b
-            })(window,
-                document);
-        </script>
-        
-        <script type="text/javascript">
-            Flickfeed({
-                userId: "122834378@N03",
-                target: ".square-grid",
-                size: 'q',
-            });
-        </script>
-        
+        <div class="container">
+    		<div class="col-xs-12">
+            <p>（。 ㅅ 。）<small>dipdiri.com</small> </p>
+            <dl>
+                <dd><small>- sitede birçok irili ufaklı meme olduğunu biliyorum. </small>
+                <small><a href="http://www.google.com/search?q=18+yaşından+küçüğüm+nasıl+meme+görebilirim"><span class="s">18 yaşından küçüğüm</span></a></small> - <small><a href="http://www.dipdiri.com"><span class="nc">18 yaşından büyüğüm</span></a></small></dd>
+            </dl>
+        </div>
+
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js"></script>
-        
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -135,7 +31,3 @@
         </script>
     </body>
 </html>
-
-
-
-
