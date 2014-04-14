@@ -20,7 +20,7 @@
 		invoke: function($setting, callback){
 			drawCanvasRect($setting, $setting.containerId);
 			//Draw the header
-			drawUptimeRobotHeader($setting, $setting.containerId);
+			//drawUptimeRobotHeader($setting, $setting.containerId);
 			
 			//Invoke API for all monitors
 			$.each($setting.monitorConfs, function(index, object){
@@ -79,7 +79,7 @@
 						});
 						i++;
 					}
-					drawUptimeRobotHeader($setting, getContainerIdForRowNum($setting, i-1));
+					//drawUptimeRobotHeader($setting, getContainerIdForRowNum($setting, i-1));
 				}
 			});
 		},
