@@ -342,7 +342,7 @@
 		c.textAlign = 'center';
 		c.lineWidth = 4;
 		if(monitorConf.labelPrefix){
-			var text = monitorConf.labelPrefix + ": " + perc + "%";
+			// var text = monitorConf.labelPrefix + ": " + perc + "%";
 			//c.fillText(text, xMid - text.length*3.0, radiusRatio/1.3 * padding);
 			drawTextAlongArc(c, text, xMid, yMid, radius, 0.7*Math.PI);
 		}else if(monitorConf.isStatus){
