@@ -92,5 +92,5 @@ function addElement () {
   new_p.appendChild(newContent); //add the text node to the newly created div. 
   // add the newly created element and its content into the DOM 
   my_div = document.getElementById("info"); 
-  document.body.insertBefore(new_p, my_div); 
+  document.body.insertAfter(new_p, my_div); 
 } 
