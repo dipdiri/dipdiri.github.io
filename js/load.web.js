@@ -82,15 +82,7 @@ ga('send', 'pageview');
 
 
 document.body.onload = addElement;
-var my_div = null; 
-var new_p = null; 
 function addElement () { 
-  // create a new div element 
-  // and give it some content 
-  var new_p = document.createElement("p"); 
-  var newContent = document.createTextNode("Hi there and greetings!"); 
-  new_p.appendChild(newContent); //add the text node to the newly created div. 
-  // add the newly created element and its content into the DOM 
-  my_div = document.getElementById("info"); 
-  document.body.insertAfter(new_p, my_div); 
+	var theDiv = document.getElementById("info");
+	theDiv.innerHTML += "Hi there and greetings!"; 
 } 
