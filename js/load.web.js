@@ -83,6 +83,6 @@ ga('send', 'pageview');
 
 document.body.onload = addElement;
 function addElement () { 
-	var theDiv = document.getElementById("info");
+	var theDiv = document.getElementById("one");
 	theDiv.innerHTML += "Hi there and greetings!"; 
 } 
