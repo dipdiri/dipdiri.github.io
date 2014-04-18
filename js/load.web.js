@@ -79,3 +79,18 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-49892205-1', 'dipdiri.com');
 ga('send', 'pageview');
+
+
+document.body.onload = addElement;
+var my_div = null; 
+var newDiv = null; 
+function addElement () { 
+  // create a new div element 
+  // and give it some content 
+  var newDiv = document.createElement("div"); 
+  var newContent = document.createTextNode("Hi there and greetings!"); 
+  newDiv.appendChild(newContent); //add the text node to the newly created div. 
+  // add the newly created element and its content into the DOM 
+  my_div = document.getElementById("org_div1"); 
+  document.body.insertBefore(newDiv, my_div); 
+} 
