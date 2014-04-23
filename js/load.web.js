@@ -66,7 +66,9 @@ loadScripts([
 	"http://code.jquery.com/jquery-1.11.0.min.js",
 	"//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js",
  	"http://jasny.github.io/bootstrap/dist/js/jasny-bootstrap.min.js",
-	"http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js"
+	"http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js",
+	"//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.js",
+        "//cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js"
 ],function(){
     console.info('loaded.');
 });
