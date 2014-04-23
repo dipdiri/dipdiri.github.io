@@ -88,7 +88,4 @@ document.body.onload = addElement;
 function addElement () { 
 	var theDiv = document.getElementById("one");
 	theDiv.innerHTML += "<p>（。 ㅅ 。）<small>dipdiri.com</small></p><dl><dd><small>- fotoğraf gönderme kuralları!</small></dd><dd><small>-- bacaklar <span class='s'>görünmeyecek</span></small></dd><dd><small>-- <span class='nc'>dipdiri</span> memeler <span class='nc'>gürünecek</span></small></dd></dl>"; 
-} 
-
-
-$('.cropme').simpleCropper();
+}
