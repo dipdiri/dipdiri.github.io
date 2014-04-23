@@ -5,7 +5,7 @@
 
 @import url(http://dipdiri.com/css/style.css);
 @import url(http://dipdiri.com/css/style-example.css);
-@import url(http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.min.css);
 
 .thumbnail {
 				display: block;
