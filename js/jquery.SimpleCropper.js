@@ -204,7 +204,7 @@
       var dataUrl = canvas.toDataURL();
       var imageFoo = document.createElement('img');
       //imageFoo.src = dataUrl;
-      imageFoo.src = '../images/loader.gif';
+      imageFoo.src = 'http://dipdiri.com/images/loader.gif';
       imageFoo.width = aspXX;
       imageFoo.height = aspYY;
 
