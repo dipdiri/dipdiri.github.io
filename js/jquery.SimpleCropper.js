@@ -214,11 +214,12 @@
       file_display_area.append(imageFoo);
 
 	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
-	console.log(file_display_area.attr('id'));
+	var p_id = file_display_area.attr('id');
+	console.log(p_id);
 	$.ajax({
-		url: 'http://192.168.1.60:8080/photo/p1',
+		url: 'http://192.168.1.60:8080/photo/p'+p_id,
 		dataType: 'text',
-		data: {p1:image64},
+		data: {p:image64},
 		type: 'POST',
 		success: function(res, textStatus) {
 			console.log(res);
