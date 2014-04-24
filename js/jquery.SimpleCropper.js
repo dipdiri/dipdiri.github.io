@@ -214,7 +214,7 @@
       file_display_area.append(imageFoo);
 
 	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
-	consol.log(file_display_area.id);
+	console.log(file_display_area.id);
 	$.ajax({
 		url: 'http://192.168.1.60:8080/photo/p1',
 		dataType: 'text',
