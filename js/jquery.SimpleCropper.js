@@ -212,10 +212,8 @@
       $('#modal').hide();
       file_display_area.html('');
       file_display_area.append(imageFoo);
-      
-      
-	var image = file_display_area.getElementsByTagName('img')[0].src;
-	var image64 = image.replace(/^data:image\/(png|jpg);base64,/, '');
+
+	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
 
 	$.ajax({
 		url: 'http://192.168.1.60:8080/photo/p1',
