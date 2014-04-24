@@ -27,8 +27,11 @@
 
     //add click to element
     this.click(function() {
-      aspX = $(this).width();
-      aspY = $(this).height();
+      //aspX = $(this).width();
+      //aspY = $(this).height();
+      
+      aspX = 600;
+      aspY = 600;
       file_display_area = $(this);
       $('#fileInput').click();
     });
@@ -175,7 +178,7 @@
       var context = canvas.getContext('2d');
 
       // Delete previous image on canvas
-      context.clearRect(0, 0, 600, 600);
+      context.clearRect(0, 0, canvas.width, canvas.height);
 
       // Set selection width and height
       var sw = x2 - x1;
