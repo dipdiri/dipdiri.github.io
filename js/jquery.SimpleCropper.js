@@ -225,7 +225,9 @@
 	  var image_3 = div_3.getElementsByTagName('img')[0].src;
 	  var image64_3 = image_3.replace(/^data:image\/(png|jpg);base64,/, '');
 	  
-	  $.ajax({
+	  
+	  if($("#img1").attr('src') == '') { 
+		 $.ajax({
     		  url: 'http://192.168.1.60:8080/photo/p1',
     		  dataType: 'text',
     		  data: {p1:image64_1},
@@ -234,29 +236,35 @@
     		    	console.log(res);
     		    	$( "#img1" ).attr( "src", res );
     		    }
-	  });
+		 });
+    	  }
+    
 	  
-	  $.ajax({
-    		  url: 'http://192.168.1.60:8080/photo/p2',
-    		  dataType: 'text',
-    		  data: {p2:image64_2},
-    		  type: 'POST',
-    		  success: function(res, textStatus) {
-    		    	console.log(res);
-    		    	$( "#img2" ).attr( "src", res );
-    		    }
-	  });
+	  if($("#img2").attr('src') == '') { 
+		  $.ajax({
+	    		  url: 'http://192.168.1.60:8080/photo/p2',
+	    		  dataType: 'text',
+	    		  data: {p2:image64_2},
+	    		  type: 'POST',
+	    		  success: function(res, textStatus) {
+	    		    	console.log(res);
+	    		    	$( "#img2" ).attr( "src", res );
+	    		    }
+		  });
+	  }
 	  
-	  $.ajax({
-    		  url: 'http://192.168.1.60:8080/photo/p3',
-    		  dataType: 'text',
-    		  data: {p3:image64_3},
-    		  type: 'POST',
-    		  success: function(res, textStatus) {
-    		    	console.log(res);
-    		    	$( "#img3" ).attr( "src", res );
-    		    }
-	  });
+	  if($("#img3").attr('src') == '') { 
+		  $.ajax({
+	    		  url: 'http://192.168.1.60:8080/photo/p3',
+	    		  dataType: 'text',
+	    		  data: {p3:image64_3},
+	    		  type: 'POST',
+	    		  success: function(res, textStatus) {
+	    		    	console.log(res);
+	    		    	$( "#img3" ).attr( "src", res );
+	    		    }
+		  });
+	  }
 
     }
 
