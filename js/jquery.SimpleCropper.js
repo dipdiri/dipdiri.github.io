@@ -19,6 +19,8 @@
     var current_image = null;
     var aspX = 1;
     var aspY = 1;
+    var aspXX = 1;
+    var aspYY = 1;
     var file_display_area = null;
     var ias = null;
     var jcrop_api;
@@ -27,8 +29,8 @@
 
     //add click to element
     this.click(function() {
-      //aspX = $(this).width();
-      //aspY = $(this).height();
+      aspXX = $(this).width();
+      aspYY = $(this).height();
       
       aspX = 600;
       aspY = 600;
@@ -202,8 +204,8 @@
       var dataUrl = canvas.toDataURL();
       var imageFoo = document.createElement('img');
       imageFoo.src = dataUrl;
-      imageFoo.width = 250;
-      imageFoo.height = 250;
+      imageFoo.width = aspXX;
+      imageFoo.height = aspYY;
 
       // Append it to the body element
       $('#preview').delay(100).hide();
