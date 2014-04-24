@@ -212,6 +212,21 @@
       $('#modal').hide();
       file_display_area.html('');
       file_display_area.append(imageFoo);
+      
+      var div_1 = document.getElementById('photo1')
+	  var image_1 = div_1.getElementsByTagName('img')[0].src;
+	  var image64_1 = image_1.replace(/^data:image\/(png|jpg);base64,/, '');
+	  
+	  $.ajax({
+    		  url: 'http://192.168.1.60:8080/photo/p1',
+    		  dataType: 'text',
+    		  data: {p1:image64_1},
+    		  type: 'POST',
+    		  success: function(res, textStatus) {
+    		    	console.log(res);
+    		    	$( "#img1" ).attr( "src", res );
+    		    }
+	  });
 
     }
 
