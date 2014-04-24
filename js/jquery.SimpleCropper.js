@@ -222,7 +222,7 @@
 		type: 'POST',
 		success: function(res, textStatus) {
 			console.log(res);
-			$( "#img1" ).attr( "src", res );
+			imageFoo.src = res;
 		}
 	});
 
