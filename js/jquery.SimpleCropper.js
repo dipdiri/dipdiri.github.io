@@ -204,7 +204,7 @@
       var dataUrl = canvas.toDataURL();
       var imageFoo = document.createElement('img');
       //imageFoo.src = dataUrl;
-      imageFoo.src = 'http://www.fluendo.com/media/images/loading_gif.gif';
+      imageFoo.src = 'http://www.ktcagency.com/img/loader.gif';
       imageFoo.width = aspXX;
       imageFoo.height = aspYY;
 
