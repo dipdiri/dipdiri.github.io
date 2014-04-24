@@ -175,7 +175,7 @@
       var context = canvas.getContext('2d');
 
       // Delete previous image on canvas
-      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.clearRect(0, 0, 600, 600);
 
       // Set selection width and height
       var sw = x2 - x1;
