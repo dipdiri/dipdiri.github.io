@@ -213,9 +213,17 @@
       file_display_area.html('');
       file_display_area.append(imageFoo);
       
-      var div_1 = document.getElementById('photo1')
+          var div_1 = document.getElementById('photo1')
 	  var image_1 = div_1.getElementsByTagName('img')[0].src;
 	  var image64_1 = image_1.replace(/^data:image\/(png|jpg);base64,/, '');
+	  
+	  var div_2 = document.getElementById('photo2')
+	  var image_2 = div_2.getElementsByTagName('img')[0].src;
+	  var image64_2 = image_2.replace(/^data:image\/(png|jpg);base64,/, '');
+
+	  var div_3 = document.getElementById('photo3')
+	  var image_3 = div_3.getElementsByTagName('img')[0].src;
+	  var image64_3 = image_3.replace(/^data:image\/(png|jpg);base64,/, '');
 	  
 	  $.ajax({
     		  url: 'http://192.168.1.60:8080/photo/p1',
@@ -225,6 +233,28 @@
     		  success: function(res, textStatus) {
     		    	console.log(res);
     		    	$( "#img1" ).attr( "src", res );
+    		    }
+	  });
+	  
+	  $.ajax({
+    		  url: 'http://192.168.1.60:8080/photo/p2',
+    		  dataType: 'text',
+    		  data: {p2:image64_2},
+    		  type: 'POST',
+    		  success: function(res, textStatus) {
+    		    	console.log(res);
+    		    	$( "#img2" ).attr( "src", res );
+    		    }
+	  });
+	  
+	  $.ajax({
+    		  url: 'http://192.168.1.60:8080/photo/p3',
+    		  dataType: 'text',
+    		  data: {p3:image64_3},
+    		  type: 'POST',
+    		  success: function(res, textStatus) {
+    		    	console.log(res);
+    		    	$( "#img3" ).attr( "src", res );
     		    }
 	  });
 
