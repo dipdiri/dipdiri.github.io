@@ -219,7 +219,7 @@
 	  
 	  $.ajax({
     		  url: 'http://192.168.1.60:8080/photo/p1',
-    		  dataType: 'text',
+    		  dataType: 'json',
     		  data: {p1:image64_1},
     		  type: 'POST',
     		  success: function(res, textStatus) {
