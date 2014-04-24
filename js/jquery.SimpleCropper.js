@@ -202,6 +202,8 @@
       var dataUrl = canvas.toDataURL();
       var imageFoo = document.createElement('img');
       imageFoo.src = dataUrl;
+      imageFoo.width = canvas.width;
+      imageFoo.height = canvas.height;
 
       // Append it to the body element
       $('#preview').delay(100).hide();
