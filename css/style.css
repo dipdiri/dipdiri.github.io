@@ -19,6 +19,15 @@
   width:  300px;
 }
 
+.stamp {
+  position: absolute;
+  border: 3px dotted black;
+}
+    
+.stamp1 {
+  width: 250px;
+}
+
 #fileInput{
   width:0;
   height:0;
