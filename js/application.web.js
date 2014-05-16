@@ -5,6 +5,6 @@ $container.imagesLoaded( function() {
     $container.masonry({
 	  	itemSelector: '.item',
 		isFitWidth: true,
-		stamp: '.stamp',
+		stamp: '.stamp'
 	});
 });
