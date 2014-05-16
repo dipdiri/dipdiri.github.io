@@ -1,5 +1,5 @@
 /*
- **	This plugin is inspired from  jQuery Scroll pagination plugin
+ ** This plugin is inspired from  jQuery Scroll pagination plugin
  ** I have updated it to suit my requirements.
  ** Amit Jain
  ** amitjain1982@gmail.com
