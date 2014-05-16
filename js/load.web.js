@@ -63,12 +63,12 @@ function loadScripts(array,callback){
 }
 
 loadScripts([
-  "http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js",
+  // "http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js",
 	"http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js",
  	"http://jasny.github.io/bootstrap/dist/js/jasny-bootstrap.min.js",
   "http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js",
   "http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js",
-  "http://dipdiri.com/js/remoteNonStopPageScroll.js",
+  // "http://dipdiri.com/js/remoteNonStopPageScroll.js",
 	"http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js",
 	"http://cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.js",
   "http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js",
