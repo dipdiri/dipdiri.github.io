@@ -1,8 +1,8 @@
 $('.cropme').simpleCropper();
 
-var $container = $('#container');
-$container.imagesLoaded( function() {
-    $container.masonry({
+var $contents = $('#contents');
+$contents.imagesLoaded( function() {
+    $contents.masonry({
 	  	itemSelector: '.item',
 		isFitWidth: true,
 		stamp: '.stamp'
