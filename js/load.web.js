@@ -88,8 +88,9 @@ ga('create', 'UA-49892205-1', 'dipdiri.com');
 ga('send', 'pageview');
 
 
-// document.body.onload = addElement;
-// function addElement () { 
-// 	var theDiv = document.getElementById("one");
-// 	theDiv.innerHTML += "<p>（。 ㅅ 。）<small>dipdiri.com</small></p><dl><dd><small>- fotoğraf gönderme kuralları!</small></dd><dd><small>-- bacaklar <span class='s'>görünmeyecek</span></small></dd><dd><small>-- <span class='nc'>dipdiri</span> memeler <span class='nc'>gürünecek</span></small></dd></dl>"; 
-// }
+document.body.onload = addElement;
+function addElement () { 
+	var theDiv = document.getElementById("one");
+  theDiv.innerHTML += "<p>（。 ㅅ 。）<small>dipdiri.com</small> <small> - [kanallar: </small> <small><a href='chickswithtits'><span class='s'>chickswithtits</span></small></a> | <small><a href='14by8inches'><span class='nc'>14by8inches</span></small></a></small> | <small><a href='i-just-love-boobs'><span class='s'>i-just-love-boobs</span></small></a> | <small><a href='just4puffyboobs'><span class='nc'>just4puffyboobs</span></small></a></small> | <small><a href='realnicetits'><span class='s'>realnicetits</span></small></a> | <small><a href='lovelyboobphotos'><span class='nc'>lovelyboobphotos</span></small></a></small> | <small><a href='even-hotter'><span class='s'>even-hotter</span></small></a>]</p>";
+	//theDiv.innerHTML += "<p>（。 ㅅ 。）<small>dipdiri.com</small></p><dl><dd><small>- kanallar!</small></dd><dd><small>-- chickswithtits <span class='s'>görünmeyecek</span></small></dd><dd><small>-- <span class='nc'>dipdiri</span> memeler <span class='nc'>gürünecek</span></small></dd></dl>"; 
+}
