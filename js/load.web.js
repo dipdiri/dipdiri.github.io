@@ -73,8 +73,9 @@ loadScripts([
 	"http://cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.js",
   "http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js",
   "http://dipdiri.com/js/jquery.SimpleCropper.js",
-  "http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js",
-  "http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.0/jquery.nanogallery.min.js",
+  //"http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js",
+  //"http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.0/jquery.nanogallery.min.js",
+  "http://dipdiri.com/js/jquery.fullsizable.1.6.min.js",
   "http://dipdiri.com/js/application.web.js"
 ],function(){
     console.info('loaded.');

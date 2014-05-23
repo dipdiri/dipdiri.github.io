@@ -1,5 +1,10 @@
-$(document).ready(function () {
-    $("#four").nanoGallery();
+$(function() {
+	$('a').fullsizable({
+		detach_id: 'container',
+		navigation: true,
+		closeButton: true,
+		clickBehaviour: 'next'
+	});
 });
 
 $('.cropme').simpleCropper();
