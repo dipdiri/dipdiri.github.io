@@ -55,16 +55,16 @@ img {
 }
 
 .prevLink {
-	font-size: 150%;
+	font-size: 0%;
 }
 
 .currentStep {
-	padding: 5px;
-	font-size: 150%;
+	padding: 4px;
+	font-size: 120%;
 }
 
 .step {
-	padding: 5px;
+	padding: 4px;
 	font-size: 100%;
 }
 
