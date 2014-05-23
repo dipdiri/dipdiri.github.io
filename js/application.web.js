@@ -1,5 +1,5 @@
 $(function() {
-	$('a').fullsizable({
+	$('a').fullsizableDynamic({
 		detach_id: 'container',
 		navigation: true,
 		closeButton: true,
