@@ -11,11 +11,13 @@
 @import url(http://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/css/blueimp-gallery-indicator.css);
 @import url(http://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/css/blueimp-gallery-video.css);
 
-img {
-	width: 100%;
+@media (min-width: 400px){
+   img {
+		width: 100%;
+	}
 }
 
-.container {
+.container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
 }
