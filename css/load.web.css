@@ -15,7 +15,7 @@ img {
 	width: 100%;
 }
 
-@media (min-width: 660px){
+@media (min-width: 680px){
 	img {
 		width: auto;
 	}
