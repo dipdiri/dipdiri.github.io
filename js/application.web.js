@@ -1,5 +1,10 @@
-$.fullsizableDynamic('#four a', {
-  navigation: true
+$(function() {
+	$('a').fullsizableDynamic({
+		detach_id: 'container',
+		navigation: true,
+		closeButton: true,
+		clickBehaviour: 'next'
+	});
 });
 
 $('.cropme').simpleCropper();
