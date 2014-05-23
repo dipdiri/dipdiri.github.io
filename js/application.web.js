@@ -1,6 +1,9 @@
 $(function() {
-	$.fullsizableDynamic('#four a', {
-  		navigation: true
+	$('a').fullsizable({
+		detach_id: 'container',
+		navigation: true,
+		closeButton: true,
+		clickBehaviour: 'next'
 	});
 });
 
