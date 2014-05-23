@@ -7,13 +7,13 @@ document.getElementById('four').onclick = function (event) {
     blueimp.Gallery(links, options);
 };
 
-$('.cropme').simpleCropper();
+// $('.cropme').simpleCropper();
 
-var $contents = $('#contents');
-$contents.imagesLoaded( function() {
-    $contents.masonry({
-	  	itemSelector: '.item',
-		isFitWidth: true,
-		stamp: '.stamp'
-	});
-});
+// var $contents = $('#contents');
+// $contents.imagesLoaded( function() {
+//     $contents.masonry({
+// 	  	itemSelector: '.item',
+// 		isFitWidth: true,
+// 		stamp: '.stamp'
+// 	});
+// });
