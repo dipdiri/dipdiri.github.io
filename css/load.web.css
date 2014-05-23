@@ -6,7 +6,9 @@
 @import url(http://dipdiri.com/css/style.css);
 @import url(http://dipdiri.com/css/style-example.css);
 @import url(http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.min.css);
-@import url(http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.0/css/nanogallery.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/css/blueimp-gallery.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/css/blueimp-gallery-indicator.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/css/blueimp-gallery-video.css);
 
 
 .thumbnail {

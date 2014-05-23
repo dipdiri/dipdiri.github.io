@@ -1,11 +1,11 @@
-$(function() {
-	$('a').fullsizable({
-		detach_id: 'container',
-		navigation: true,
-		closeButton: true,
-		clickBehaviour: 'next'
-	});
-});
+document.getElementById('four').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
 
 $('.cropme').simpleCropper();
 
