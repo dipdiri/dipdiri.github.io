@@ -1,11 +1,13 @@
 @import url(http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css);
-@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+@import url(http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
 @import url(http://jasny.github.io/bootstrap/dist/css/jasny-bootstrap.min.css);
 @import url(http://getbootstrap.com/assets/css/docs.min.css);
 
 @import url(http://dipdiri.com/css/style.css);
 @import url(http://dipdiri.com/css/style-example.css);
-@import url(//cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.min.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/css/jquery.Jcrop.min.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.0/css/nanogallery.css);
+
 
 .thumbnail {
 				display: block;
