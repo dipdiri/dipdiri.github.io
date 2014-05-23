@@ -49,6 +49,24 @@ img {
 
 }
 
+.prevLink {
+	font-size: 150%;
+}
+
+.currentStep {
+	padding: 5px;
+	font-size: 200%;
+}
+
+.step {
+	padding: 5px;
+	font-size: 100%;
+}
+
+.nextLink {
+	font-size: 150%;
+}
+
 /*.moreLink{
 	font-size: 30px;
 }*/
