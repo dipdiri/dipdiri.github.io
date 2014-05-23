@@ -69,7 +69,9 @@ img {
 }
 
 .nextLink {
-	font-size: 250%;
+	font-size: 200%;
+	margin-top: 20px;
+	display:block;
 }
 
 /*.moreLink{
