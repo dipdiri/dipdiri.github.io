@@ -73,16 +73,13 @@ loadScripts([
 	"http://cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.js",
   "http://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js",
   "http://dipdiri.com/js/jquery.SimpleCropper.js",
-  //"http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js",
-  //"http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.0/jquery.nanogallery.min.js",
+  "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery-fullscreen.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery-indicator.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery-video.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery-vimeo.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery-youtube.js",
-  "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/blueimp-gallery.js",
   "//cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.15.0/js/jquery.blueimp-gallery.js",
-  "http://dipdiri.com/js/jquery.fullsizable.1.6.min.js",
   "http://dipdiri.com/js/application.web.js"
 ],function(){
     console.info('loaded.');
