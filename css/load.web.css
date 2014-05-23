@@ -35,6 +35,10 @@
 
 }
 
+.moreLink{
+	font-size: 30px;
+}
+
 #fullsized_go_prev, #fullsized_go_next, #fullsized_close, #fullsized_fullscreen {
       position: absolute;
       top: 50%;
