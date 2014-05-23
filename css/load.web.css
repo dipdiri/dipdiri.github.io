@@ -49,13 +49,18 @@ img {
 
 }
 
+.paginate{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .prevLink {
 	font-size: 150%;
 }
 
 .currentStep {
 	padding: 5px;
-	font-size: 200%;
+	font-size: 150%;
 }
 
 .step {
