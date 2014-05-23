@@ -55,7 +55,8 @@ img {
 
 .paginateButtons{
 	font-size: 30px;
-	margin-top: 20px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #fullsized_go_prev, #fullsized_go_next, #fullsized_close, #fullsized_fullscreen {
