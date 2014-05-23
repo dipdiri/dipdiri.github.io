@@ -35,8 +35,13 @@
 
 }
 
-.moreLink{
+/*.moreLink{
 	font-size: 30px;
+}*/
+
+.paginateButtons{
+	font-size: 30px;
+	margin-top: 20px; 
 }
 
 #fullsized_go_prev, #fullsized_go_next, #fullsized_close, #fullsized_fullscreen {
