@@ -9,9 +9,9 @@
 
 // $('.cropme').simpleCropper();
 
-var $contents = $('#four-tag');
+var $contents = $('#fourtag');
 $contents.imagesLoaded( function() {
     $contents.masonry({
-	  	itemSelector: '.item',
+	  	itemSelector: '.item'
 	});
 });
