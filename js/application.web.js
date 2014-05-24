@@ -12,8 +12,6 @@
 var $contents = $('#four-tag');
 $contents.imagesLoaded( function() {
     $contents.masonry({
-	  	itemSelector: '.item',
-		isFitWidth: true,
-		stamp: '.stamp'
+	  	itemSelector: '.item'
 	});
 });
