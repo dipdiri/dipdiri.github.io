@@ -49,6 +49,10 @@ img {
 
 }
 
+.item{
+	width: 25%;
+}
+
 .paginate{
 	margin-top: 20px;
 	margin-bottom: 20px;
