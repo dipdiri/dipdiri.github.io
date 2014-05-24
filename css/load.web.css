@@ -54,7 +54,7 @@ img {
 }
 
 .item img {
-	width: auto;
+	width: 100%;
 }
 
 .paginate{
