@@ -104,7 +104,7 @@ function addElement () {
   }
   var theDivTag = document.getElementById("onetag");
   if(theDivTag){
-    theDivTag.innerHTML += "<div id='blueimp-gallery' class='blueimp-gallery'><div class='slides'></div><h3 class='title'></h3><a class='prev'>‹</a><a class='next'>›</a><a class='close'>×</a><a class='play-pause'></a></div> <p>（。 ㅅ 。）<small>dipdiri.com</small></p> ";
+    theDivTag.innerHTML += "<div id='blueimp-gallery' class='blueimp-gallery'><div class='slides'></div><h3 class='title'></h3><a class='prev'>‹</a><a class='next'>›</a><a class='close'>×</a><a class='play-pause'></a></div> <p>（。 ㅅ 。）<small>dipdiri.com</small></p>  <small> kalite: </small> <a href='?q=5'><small> 1 </small></a><a href='?q=4'><small> 2 </small></a><a href='?q=3'><small> 3 </small></a><a href='?q=2'><small> 4 </small></a><a href='?q=1'><small> 5 </small></a><a href='?q=0'><small> 6 </small></a> <br><br>";
   }
 }
 
