@@ -50,7 +50,11 @@ img {
 }
 
 .item{
-	width: 100%;
+	width: 25%;
+}
+
+.item img {
+	width: auto;
 }
 
 .paginate{
