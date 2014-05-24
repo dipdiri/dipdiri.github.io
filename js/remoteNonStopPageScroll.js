@@ -5,13 +5,6 @@
  ** amitjain1982@gmail.com
  */
 
-var $contents = $('#fourcollage');
-$contents.imagesLoaded( function() {
-    $contents.masonry({
-        itemSelector: '.item'
-    });
-});
-
 (function ($) {
     var SCROLL_INITIALIZED = 'remote-pagination-initialized';
     var UPDATED_OPTIONS = 'remote-pagination-updatedOptions';
@@ -77,8 +70,7 @@ $contents.imagesLoaded( function() {
                 data:{},
                 success:function (data) {
                     var oldPosition =target.scrollTop();
-                    // container.append(data);
-                    $contents.append( data ).masonry( 'appended', data );
+                    container.append(data);
                     target.scrollTop(oldPosition-1);
 
                     var objectsRendered = container.children('['+STATUS+'!=loaded]');
@@ -130,5 +122,3 @@ $contents.imagesLoaded( function() {
         'loadingHTML':null
     };
 })(jQuery);
-
-//onSuccess="\$(data).find('a.i').each( function(){ console.log(\$(this).parent().html()); \$contents.masonry( 'appended', \$(this).parent().html() ); } );"
