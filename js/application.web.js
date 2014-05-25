@@ -16,4 +16,5 @@
 // 	});
 // });
 
- $('#fourcollage').imagesLoaded( function() {$('#fourcollage').masonry({itemSelector: '.item'});});
+$('#fourcollage').imagesLoaded( function() {$('#fourcollage').masonry({itemSelector: '.item'});});
+$('#four').imagesLoaded( function() {$('#four').masonry({itemSelector: '.item'});});
