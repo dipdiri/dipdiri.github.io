@@ -21,6 +21,10 @@ img {
 	}
 }
 
+.blueimp-gallery > .title {
+	font-size: 10px;
+}
+
 .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
