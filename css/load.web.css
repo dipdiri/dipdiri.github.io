@@ -54,6 +54,18 @@ img {
 
 }
 
+.loadinguser{
+	width: auto;
+}
+
+.loadingtag{
+	width: auto;
+}
+
+.loadingcollage{
+	width: auto;
+}
+
 .item{
 	width: 25%;
 }

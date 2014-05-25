@@ -17,4 +17,4 @@
 // });
 
 $('#fourcollage').imagesLoaded( function() {$('#fourcollage').masonry({itemSelector: '.item'});});
-$('#four').imagesLoaded( function() {$('#four').masonry({itemSelector: '.item'});});
+$('#fouruser').imagesLoaded( function() {$('#fouruser').masonry({itemSelector: '.item'});});
